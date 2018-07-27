@@ -1,0 +1,22 @@
+<div class="meta">
+  <span class="date">
+    <i class='fa fa-calendar'></i>
+    {{ .PublishDate.Format "January 2, 2006" }}
+  </span>
+  <span class='reading_time'>
+      <i class='fa fa-clock'></i>
+    {{ .ReadingTime }} minutes
+  </span>
+  {{ if .Params.categories }}
+    <span class="category-block">
+      <i class='fa fa-folder'></i>
+      {{ range $i, $category := .Params.categories }}
+        {{if $i}},{{end}}
+        <a href="{{$.Site.BaseURL}}categories/{{. | urlize }}">
+          {{ $category }}
+        </a>
+      {{ end }}
+    </span>
+  {{ end}}
+
+</div>

@@ -1,0 +1,15 @@
+baseURL1 = "http://example.org/"
+baseURL="http://localhost:1313/learning/"
+relativeurls = false
+languageCode = "en-us"
+publishDir="docs"
+title = "Learning 101"
+disqusShortname = "dev-learning"
+pygmentsUseClasses=true
+pygmentsOptions= "linenos=table, startinline=true"
+Paginate=2
+[taxonomy]
+  category="categories"
+  tag="tags"
+[outputs]
+home = [ "HTML", "RSS", "JSON"]

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Learning 101</title>
+    <link>http://localhost:1313/learning/tags/</link>
+    <description>Recent content in Tags on Learning 101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Jul 2018 19:38:03 +0600</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/learning/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Analogy</title>
+      <link>http://localhost:1313/learning/tags/analogy/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/tags/analogy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bba</title>
+      <link>http://localhost:1313/learning/tags/bba/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/tags/bba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Civic</title>
+      <link>http://localhost:1313/learning/tags/civic/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/tags/civic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>English</title>
+      <link>http://localhost:1313/learning/tags/english/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/tags/english/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geography</title>
+      <link>http://localhost:1313/learning/tags/geography/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/tags/geography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Language</title>
+      <link>http://localhost:1313/learning/tags/language/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/tags/language/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mba</title>
+      <link>http://localhost:1313/learning/tags/mba/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/tags/mba/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

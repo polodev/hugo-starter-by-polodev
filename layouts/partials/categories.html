@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-header">
+    <h3>Categories</h3>
+  </div>
+  <ul class="list-group">
+    {{ range $key, $value := .Site.Taxonomies.categories }}
+    <li class="list-group-item">
+      <a class="btn btn-link" href="{{$.Site.BaseURL}}/categories/{{$key | urlize}}">{{ $key | humanize }}</a> ({{len $value }})
+    </li>
+    {{ end }}
+  </ul>
+</div>

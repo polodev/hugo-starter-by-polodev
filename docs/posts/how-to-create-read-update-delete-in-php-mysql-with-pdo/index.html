@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning site</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/learning/css/bootstrap.min.css">
+  
+  
+  
+  <link rel="stylesheet" href="http://localhost:1313/learning/css/style.css" />
+  <link rel='stylesheet' href='http://localhost:1313/learning/css/syntax.css'/>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light main_menu">
+  <a class="navbar-brand" href="/learning/">Learning 101</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/learning/">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <div class="search_result_box d-inline my-2">
+      <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search..." aria-label="Search">
+      <div id='search_result'>
+        <ul>
+          <li><a href='#'>Lorem ipsum dolor sit amet.</a></li>
+          <li><a href='#'>Lorem ipsum dolor sit amet.</a></li>
+          <li><a href='#'>Lorem ipsum dolor sit amet.</a></li>
+          <li><a href='#'>Lorem ipsum dolor sit amet.</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</nav>
+
+<div class="center mt-4">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="mt-3">
+      
+<div id="single_page_content">
+  <h1 class="post_title">
+    <a href="/learning/posts/how-to-create-read-update-delete-in-php-mysql-with-pdo/">How to Create Read Update Delete in Php Mysql With Pdo</a>
+  </h1>
+  <hr/>
+  <div class="meta">
+    <span class="date">
+      <i class='fa fa-calendar'></i>
+      July 24, 2018
+    </span>
+    .
+    <span class='reading_time'>
+      <i class='fa fa-clock'></i>
+      4 minutes
+    </span>
+    .
+    
+
+  </div>
+
+
+<div class="toc">
+  <h2>
+    Table of Contents
+    <span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox">[hide]</label></span>
+  </h2>
+  <nav id="TableOfContents">
+<ul>
+<li><a href="#visual-crud-in-php">Visual CRUD in PHP</a>
+<ul>
+<li>
+<ul>
+<li><a href="#objective-of-this-video">Objective of this video</a></li>
+<li><a href="#blah-blah-blah">blah blah blah&hellip;.</a></li>
+</ul></li>
+<li><a href="#tuts">tuts</a>
+<ul>
+<li><a href="#mysql-part">Mysql part</a></li>
+<li><a href="#database-connection">Database connection</a></li>
+<li><a href="#create">create</a></li>
+<li><a href="#read">read</a></li>
+<li><a href="#update">update</a></li>
+<li><a href="#delete">delete</a></li>
+<li><a href="#redirection">redirection</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+
+
+  <div class='article'>
+    
+
+<h1 id="visual-crud-in-php">Visual CRUD in PHP</h1>
+
+<p><a href="http://www.youtube.com/watch?feature=player_embedded&v=MYhw4-Bc-oM
+" target="_blank"><img src="https://raw.githubusercontent.com/polodev/youtube-php-crud/master/thumbnail.png" 
+alt="create read update delete - CRUD in php and mysql using Php Data Object - pdo" width="540" border="10" /></a></p>
+
+<p>In this video tutorial I have shown how to make a basic crud application in php. I have connected with database using php PDO(php data object). Which is database agnostic. You can connect any sql database with this procedure.</p>
+
+<h3 id="objective-of-this-video">Objective of this video</h3>
+
+<ul>
+<li>You will be able to create, read, update, delete in php</li>
+<li>You will understand php data object(PDO). PDO is database agnostic. You can connect any sql database with php. PDO is most recommended way to connect with database.</li>
+<li>You will understand basic php workflow.</li>
+</ul>
+
+<h3 id="blah-blah-blah">blah blah blah&hellip;.</h3>
+
+<p>Don&rsquo;t be scare about the basic command line. Lot of people scare about command line. Actually command line help us to get rid of laborious work a lot. in this video I have used <code>cd</code>  for changing directory. <code>mkdir</code> for making directory. <code>touch</code> for making file. Here <code>touch</code> was very handy. I make 5 file in single line command. <code>touch index.php create.php edit.php delete.php db.php</code>. If you are windows user use <a href="https://git-scm.com/">git bash</a> to perform those command.</p>
+
+<h2 id="tuts">tuts</h2>
+
+<h3 id="mysql-part">Mysql part</h3>
+
+<p>first login to mysql and create database and table. to create database and table following code will be necessary. <code>sql</code> is not case sensitive. We can use sql syntax uppercase and lower case vice versa.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">company</span><span class="p">;</span>
+<span class="n">USE</span> <span class="n">company</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">people</span> <span class="p">(</span>
+  <span class="n">id</span>  <span class="nb">INT</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="n">AUTO_INCREMENT</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span>
+  <span class="n">name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+  <span class="n">email</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span>
+<span class="p">);</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<h3 id="database-connection">Database connection</h3>
+
+<p>In <code>db.php</code> connect with database by instantiating <code>PDO</code>.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> 
+<span class="nv">$dsn</span> <span class="o">=</span> <span class="s1">&#39;mysql:host=localhost;dbname=company&#39;</span><span class="p">;</span>
+<span class="nv">$username</span> <span class="o">=</span> <span class="s1">&#39;root&#39;</span><span class="p">;</span>
+<span class="nv">$password</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+<span class="nv">$options</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nv">$connection</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PDO</span><span class="p">(</span><span class="nv">$dsn</span><span class="p">,</span> <span class="nv">$username</span><span class="p">,</span> <span class="nv">$password</span><span class="p">,</span> <span class="nv">$options</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>here dsn means data source name. which contain sql driver, database name and host information.</p>
+
+<h3 id="create">create</h3>
+
+<p>we made connection in <code>db.php</code> file. Whenever we need connection we have to require &lsquo;db.php&rsquo; page. In create page, our form action is empty so, it will submit form data to same page. Hence, we use php <code>isset</code> function whether form submitted or not. If <code>$_POST['name_field']</code> is set in  we will get value from form and insert data into database</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> 
+  <span class="nv">$name</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">];</span>
+  <span class="nv">$email</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">];</span>
+  <span class="nv">$sql</span> <span class="o">=</span> <span class="s1">&#39;INSERT INTO people(name, email) VALUES(:name, :email)&#39;</span><span class="p">;</span>
+  <span class="nv">$statement</span> <span class="o">=</span> <span class="nv">$connection</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+  <span class="nv">$statement</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">([</span><span class="s1">&#39;:name&#39;</span> <span class="o">=&gt;</span> <span class="nv">$name</span><span class="p">,</span> <span class="s1">&#39;:email&#39;</span> <span class="o">=&gt;</span> <span class="nv">$email</span><span class="p">]);</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>Here we use placeholder in sql statement. We can use <code>$connection-&gt;query()</code> function directly. Therefore, Here we use <code>prepare()</code> statement. Which actually less error prone and secure.</p>
+
+<h3 id="read">read</h3>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> 
+<span class="nv">$sql</span> <span class="o">=</span> <span class="s1">&#39;SELECT * FROM people&#39;</span><span class="p">;</span>
+<span class="nv">$statement</span> <span class="o">=</span> <span class="nv">$connection</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+<span class="nv">$statement</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+<span class="nv">$people</span> <span class="o">=</span> <span class="nv">$statement</span><span class="o">-&gt;</span><span class="na">fetchAll</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_OBJ</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>Here we are fetching data from database using fetchAll function which take <code>PDO::FETCH_OBJ</code> constant. If we don&rsquo;t pass any constant <code>fetchAll</code> function return index and associative array. Therefore, I like to access table column in object oriented way. Hence I passed that constant.</p>
+
+<h3 id="update">update</h3>
+
+<p>In home page (<code>index.php</code>) we linked edit page in action column. which actually send data to edit page using get method. We give url param <code>id</code> and it value&rsquo;s is table id.<br />
+In  <code>edit.php</code> file we can access id param using <code>$_GET</code> super global. Once we have id we can fetch person information from database using following code.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> 
+<span class="nv">$id</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">];</span>
+<span class="nv">$sql</span> <span class="o">=</span> <span class="s1">&#39;SELECT * FROM people WHERE id=:id&#39;</span><span class="p">;</span>
+<span class="nv">$statement</span> <span class="o">=</span> <span class="nv">$connection</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+<span class="nv">$statement</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">([</span><span class="s1">&#39;:id&#39;</span> <span class="o">=&gt;</span> <span class="nv">$id</span> <span class="p">]);</span>
+<span class="nv">$person</span> <span class="o">=</span> <span class="nv">$statement</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_OBJ</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>In case of edit, existing input field value will be <code>$person</code> name and email. when edit form will submit we update our database record by filtering id.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> 
+<span class="nv">$name</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">];</span>
+<span class="nv">$email</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">];</span>
+<span class="nv">$sql</span> <span class="o">=</span> <span class="s1">&#39;UPDATE people SET name=:name, email=:email WHERE id=:id&#39;</span><span class="p">;</span>
+<span class="nv">$statement</span> <span class="o">=</span> <span class="nv">$connection</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+<span class="nv">$statement</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">([</span><span class="s1">&#39;:name&#39;</span> <span class="o">=&gt;</span> <span class="nv">$name</span><span class="p">,</span> <span class="s1">&#39;:email&#39;</span> <span class="o">=&gt;</span> <span class="nv">$email</span><span class="p">,</span> <span class="s1">&#39;:id&#39;</span> <span class="o">=&gt;</span> <span class="nv">$id</span><span class="p">]);</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<h3 id="delete">delete</h3>
+
+<p>deleting logic also as like edit. we will accessing id using <code>$_GET</code> super global and we will delete database record by filtering id.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> 
+<span class="nv">$id</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">];</span>
+<span class="nv">$sql</span> <span class="o">=</span> <span class="s1">&#39;DELETE FROM people WHERE id=:id&#39;</span><span class="p">;</span>
+<span class="nv">$statement</span> <span class="o">=</span> <span class="nv">$connection</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+<span class="nv">$statement</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">([</span><span class="s1">&#39;:id&#39;</span> <span class="o">=&gt;</span> <span class="nv">$id</span><span class="p">])</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<h3 id="redirection">redirection</h3>
+
+<p>For edit and delete success we redirect to home page using <code>header</code> function.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> 
+<span class="nx">header</span><span class="p">(</span><span class="s1">&#39;Location: /&#39;</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>Thank You. Take care.</p>
+
+  </div>
+  
+  <div class='tags py-3'>
+    Tags: 
+ 
+  </div>
+  
+
+  <div class="text-center py-3">
+    
+    
+      <a class="btn btn-info" href="http://localhost:1313/learning/posts/third-post/">Previous Post</a>
+    
+  </div>
+
+</div>
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://dev-learning.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+
+      </div>
+    </div>
+    <div class="col-md-3">
+      <aside>
+        <div class="card">
+  <div class="card-header">
+    <h3>Categories</h3>
+  </div>
+  <ul class="list-group">
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="http://localhost:1313/learning//categories/bba">Bba</a> (1)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="http://localhost:1313/learning//categories/civic">Civic</a> (3)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="http://localhost:1313/learning//categories/current-affairs">Current affairs</a> (1)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="http://localhost:1313/learning//categories/english">English</a> (2)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="http://localhost:1313/learning//categories/fifth">Fifth</a> (1)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="http://localhost:1313/learning//categories/geography">Geography</a> (3)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="http://localhost:1313/learning//categories/sociology">Sociology</a> (1)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="http://localhost:1313/learning//categories/third">Third</a> (1)
+    </li>
+    
+  </ul>
+</div>
+
+      </aside>
+    </div>
+  </div>
+</div>
+<script src="/learning/js/jquery.min.js"></script>
+<script src="/learning/js/popper.min.js"></script>
+<script src="/learning/js/bootstrap.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.1/lunr.min.js'></script>
+<script src="/learning/js/search.js"></script>
+</body>
+</html>

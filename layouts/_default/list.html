@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div>
+{{ range .Paginator.Pages }}
+  <div class="card my-2">
+    <div class="card-body">
+
+      <h3 class="post_title">
+        <a href="{{.URL}}">{{.Title}}</a>
+      </h3>
+
+      {{ partial "post_meta" . }}
+
+
+      {{.Summary}}
+
+
+       {{ if .Truncated }}
+        <div>
+          <a href="{{ .RelPermalink }}">Read More…</a>
+        </div>
+      {{ end }}
+
+    </div>
+  </div>
+{{ end }}
+{{ partial "pagination" . }}
+</div>
+{{ end }}

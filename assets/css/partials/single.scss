@@ -1,0 +1,16 @@
+.toc {
+	margin: 2em 0;
+	padding: 1em 0;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	box-shadow: 0 1px 6px rgba(0,0,0,0.03);
+	h2 {
+		margin-left: 1em;
+    border-bottom: 1px solid beige;
+    span {
+    	font-size: 14px;
+    	display: inline-block;
+    	cursor: pointer;
+    }
+	}
+}

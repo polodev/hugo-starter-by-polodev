@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geographies on Learning 101</title>
+    <link>https://polodev.github.io/learning/geography/</link>
+    <description>Recent content in Geographies on Learning 101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Jul 2018 15:05:14 +0600</lastBuildDate>
+    
+	<atom:link href="https://polodev.github.io/learning/geography/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Three english</title>
+      <link>https://polodev.github.io/learning/geography/three/</link>
+      <pubDate>Thu, 26 Jul 2018 15:05:14 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/learning/geography/three/</guid>
+      <description>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sapiente, eos labore harum alias quaerat repellat. Nesciunt ipsa qui voluptatibus, placeat voluptatem corporis sapiente sunt expedita, quod consequatur nihil nostrum quis adipisci natus commodi ipsum veniam debitis ratione numquam dolorum rerum quasi. Beatae pariatur velit a optio quo vero assumenda!</description>
+    </item>
+    
+    <item>
+      <title>One english</title>
+      <link>https://polodev.github.io/learning/geography/one/</link>
+      <pubDate>Thu, 26 Jul 2018 15:05:04 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/learning/geography/one/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, dolore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ex quaerat quis et fugit consectetur reprehenderit alias adipisci, ea esse. Beatae cumque iure explicabo assumenda quibusdam omnis, facere sequi quidem!</description>
+    </item>
+    
+  </channel>
+</rss>

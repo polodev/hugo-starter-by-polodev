@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning site</title>
+  <link rel="stylesheet" href="/learning/css/bootstrap.min.css">
+  
+  
+  
+  <link rel="stylesheet" href="https://polodev.github.io/learning/css/style.css" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light main_menu">
+  <a class="navbar-brand" href="/learning/">Learning 101</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/learning/">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <div class="search_result_box d-inline my-2">
+      <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search..." aria-label="Search">
+      <div id='search_result'>
+        <ul>
+          <li><a href='#'>Lorem ipsum dolor sit amet.</a></li>
+          <li><a href='#'>Lorem ipsum dolor sit amet.</a></li>
+          <li><a href='#'>Lorem ipsum dolor sit amet.</a></li>
+          <li><a href='#'>Lorem ipsum dolor sit amet.</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</nav>
+
+<div class="center mt-4">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="mt-3">
+      
+<div>
+  <h1 class="post_title">
+    <a href="/learning/posts/hugo-cheatsheet/">Hugo cheatsheet</a>
+  </h1>
+  <hr/>
+  <p>
+    published on July 23, 2018.
+      
+
+  </p>
+
+
+<div class="toc">
+  <h2>Table of Contents</h2>
+  <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#master-template-in-hugo"># master template in hugo</a></li>
+<li><a href="#block-in-master-template"># block in master template</a></li>
+<li><a href="#using-block-in-other-template"># using block in other template</a></li>
+<li><a href="#adding-scss-in-hugo"># Adding scss in hugo</a></li>
+<li><a href="#adding-sourcemap-and-minify-scss-in-hugo"># Adding sourcemap and minify scss in hugo</a></li>
+<li><a href="#home-page-path-in-hugo"># Home page path in hugo</a></li>
+<li><a href="#adding-static-content-like-html-css-in-hugo"># adding static content like html css in hugo</a></li>
+<li><a href="#generating-syntax-highlighter-for-hugo"># generating syntax highlighter for hugo</a></li>
+<li><a href="#highlighting-in-hugo"># highlighting in hugo</a></li>
+<li><a href="#outputting-rss-and-json-configuration-setting-in-config-toml-file"># outputting rss and json - configuration setting in <code>config.toml</code> file</a></li>
+<li><a href="#custom-archetype"># custom archetype</a></li>
+<li><a href="#how-nested-layout-works"># how nested layout works</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#for-listing-all-the-folder-inside-content-libraries-i-wrote-template-inside-layouts-library-list-html">for listing all the folder inside <code>content/libraries/</code> I wrote template inside <code>layouts/library/list.html</code></a></li>
+<li><a href="#for-listing-all-the-file-inside-content-libraries-php-i-wrote-template-inside-layouts-library-php-html">for listing all the file inside <code>content/libraries/php</code> I wrote template inside <code>layouts/library/php.html</code></a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+
+
+  <div class='article'>
+    
+
+<h2 id="master-template-in-hugo"># master template in hugo</h2>
+
+<p>In hugo master template name is <code>baseof.html</code> which located in <code>layouts/_default/baseof.html</code> .</p>
+
+<h2 id="block-in-master-template"># block in master template</h2>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template"><span style="color:#75715e">{{</span> <span style="color:#a6e22e">block</span> <span style="color:#e6db74">&#34;main&#34;</span> <span style="color:#a6e22e">.</span> <span style="color:#75715e">}}</span>
+default content here
+<span style="color:#75715e">{{</span><span style="color:#66d9ef">end</span><span style="color:#75715e">}}</span></code></pre></div>
+
+<h2 id="using-block-in-other-template"># using block in other template</h2>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ define &#34;main&#34; }}
+&lt;<span style="color:#f92672">h2</span>&gt;Different page&lt;/<span style="color:#f92672">h2</span>&gt;
+{{ end }}</code></pre></div>
+
+<h2 id="adding-scss-in-hugo"># Adding scss in hugo</h2>
+
+<p>make file inside    <code>assets/scss/style.scss</code> file</p>
+
+<p>Inside  html file</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ $sass := resources.Get &#34;scss/style.scss&#34; }}
+{{ $style := $sass | resources.ToCSS }}
+&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $style.Permalink }}&#34;</span> /&gt;</code></pre></div>
+
+<h2 id="adding-sourcemap-and-minify-scss-in-hugo"># Adding sourcemap and minify scss in hugo</h2>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ $sass := resources.Get &#34;scss/style.scss&#34; }}
+{{ $style := $sass | resources.ToCSS (dict &#34;outputStyle&#34; &#34;compressed&#34; &#34;enableSourceMap&#34; true) }}
+&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $style.Permalink }}&#34;</span> /&gt;</code></pre></div>
+
+<h2 id="home-page-path-in-hugo"># Home page path in hugo</h2>
+
+<p><code>layouts/index.html</code></p>
+
+<h2 id="adding-static-content-like-html-css-in-hugo"># adding static content like html css in hugo</h2>
+
+<p>bootstrap location <code>static/css/bootstrap.min.css</code></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;stylesheet&#39;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;{{.Site.BaseURL}}css/bootstrap.min.css&#39;</span>/&gt;
+<span style="color:#75715e">&lt;!-- or --&gt;</span>
+&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;stylesheet&#39;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;{{&#34;css/bootstrap.min.css&#34; | relURL}}&#39;</span>/&gt;</code></pre></div>
+
+<h2 id="generating-syntax-highlighter-for-hugo"># generating syntax highlighter for hugo</h2>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">hugo gen chromastyles --style=monokai &gt; static/css/syntax.css</code></pre></div>
+Run <code>hugo gen chromastyles -h</code> for more</p>
+
+<h2 id="highlighting-in-hugo"># highlighting in hugo</h2>
+
+<pre><code><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"></code></pre></div>
+</code></pre>
+
+<h2 id="outputting-rss-and-json-configuration-setting-in-config-toml-file"># outputting rss and json - configuration setting in <code>config.toml</code> file</h2>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">[outputs]
+home = [ &#34;HTML&#34;, &#34;RSS&#34;, &#34;JSON&#34;]</code></pre></div>
+
+<h2 id="custom-archetype"># custom archetype</h2>
+
+<p>today I made archetype for library. file located in <code>archetypes/library.md</code>. following toml content I wrote inside
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-frontmatter" data-lang="frontmatter">+++
+title = &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
+date = {{ .Date }}
+draft = false
+weight = 1
+type=&#39;library&#39;
+libraries = [&#34;css&#34;]
+search_keyword = &#34;css&#34;
+layout= &#34;css&#34;
++++</code></pre></div></p>
+
+<p>to use this archetype command is following
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new --kind library libraries/css/css-introduction.md
+or 
+hugo new -k library libraries/css/css-introduction.md</code></pre></div></p>
+
+<h2 id="how-nested-layout-works"># how nested layout works</h2>
+
+<p>I have set taxonomy library in <code>config.toml</code> file
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">[taxonomies]
+  library = &#34;libraries&#34;</code></pre></div></p>
+
+<h5 id="for-listing-all-the-folder-inside-content-libraries-i-wrote-template-inside-layouts-library-list-html">for listing all the folder inside <code>content/libraries/</code> I wrote template inside <code>layouts/library/list.html</code></h5>
+
+<p>Here if we want to change title of folder name instead of folder name itself - I have to make a file <code>content/libraries/_index.md</code> file with front matter following<br />
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">---
+title: &#34;php essential&#34;
+date: 2018-07-24T00:29:26+06:00
+weight: 1
+draft: false
+---</code></pre></div></p>
+
+<h5 id="for-listing-all-the-file-inside-content-libraries-php-i-wrote-template-inside-layouts-library-php-html">for listing all the file inside <code>content/libraries/php</code> I wrote template inside <code>layouts/library/php.html</code></h5>
+
+<p>Here <code>layouts/library/php.html</code>  is not a common layout naming format So in your file frontmatter we have to mention our layout</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">+++
+layout= &#34;php&#34;
++++</code></pre></div>
+
+  </div>
+  
+
+  <div class="text-center py-3">
+    
+    
+      <a class="btn btn-info" href="https://polodev.github.io/learning/posts/how-to-create-read-update-delete-in-php-mysql-with-pdo/">Previous Post</a>
+    
+  </div>
+
+
+</div>
+
+      </div>
+    </div>
+    <div class="col-md-3">
+      <aside>
+        <div class="card">
+  <div class="card-header">
+    <h3>Categories</h3>
+  </div>
+  <ul class="list-group">
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="https://polodev.github.io/learning//categories/advanced-english">Advanced english</a> (4)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="https://polodev.github.io/learning//categories/basic-english">Basic english</a> (2)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="https://polodev.github.io/learning//categories/english">English</a> (6)
+    </li>
+    
+  </ul>
+</div>
+
+      </aside>
+    </div>
+  </div>
+</div>
+<script src="/learning/js/jquery.min.js"></script>
+<script src="/learning/js/popper.min.js"></script>
+<script src="/learning/js/bootstrap.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.1/lunr.min.js'></script>
+<script src="/learning/js/search.js"></script>
+</body>
+</html>

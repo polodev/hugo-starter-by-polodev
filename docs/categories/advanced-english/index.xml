@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advanced English on Learning 101</title>
+    <link>https://polodev.github.io/learning/categories/advanced-english/</link>
+    <description>Recent content in Advanced English on Learning 101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Jul 2018 15:05:09 +0600</lastBuildDate>
+    
+	<atom:link href="https://polodev.github.io/learning/categories/advanced-english/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Three english</title>
+      <link>https://polodev.github.io/learning/english/three/</link>
+      <pubDate>Thu, 26 Jul 2018 15:05:09 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/learning/english/three/</guid>
+      <description>one - Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt libero, officia aliquid assumenda eaque voluptatem tempore rem, debitis at, reprehenderit totam perspiciatis soluta quaerat dolorem magni minus dolores expedita ad.
+two - lorem ipsum dolor sit amet Lorem ipsum dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit explicabo illum incidunt deserunt minima maxime aliquam beatae. Nesciunt, dolore vero.
+two - lorem ipsum dolor sit amet Lorem ipsum dolor.</description>
+    </item>
+    
+    <item>
+      <title>Three english post</title>
+      <link>https://polodev.github.io/learning/posts/three/</link>
+      <pubDate>Thu, 26 Jul 2018 15:05:09 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/learning/posts/three/</guid>
+      <description>one - Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sunt officiis repellat et reprehenderit distinctio cum numquam eveniet nemo consectetur nihil quo at dolor tempore deserunt earum, odit dignissimos, culpa dolorem, debitis consequuntur! Voluptate nulla quod, fugit vitae dolores culpa animi id, ad ratione est recusandae mollitia sapiente atque debitis at? Culpa consectetur, consequatur reiciendis? Et in quisquam, iste voluptas id enim, repudiandae recusandae placeat ea qui officiis pariatur impedit!</description>
+    </item>
+    
+    <item>
+      <title>Two english</title>
+      <link>https://polodev.github.io/learning/english/two/</link>
+      <pubDate>Thu, 26 Jul 2018 15:05:09 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/learning/english/two/</guid>
+      <description>&amp;lt;# one - Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt libero, officia aliquid assumenda eaque voluptatem tempore rem, debitis at, reprehenderit totam perspiciatis soluta quaerat dolorem magni minus dolores expedita ad.
+two - lorem ipsum dolor sit amet Lorem ipsum dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit explicabo illum incidunt deserunt minima maxime aliquam beatae. Nesciunt, dolore vero.
+two - lorem ipsum dolor sit amet Lorem ipsum dolor.</description>
+    </item>
+    
+    <item>
+      <title>Two english post</title>
+      <link>https://polodev.github.io/learning/posts/two/</link>
+      <pubDate>Thu, 26 Jul 2018 15:05:09 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/learning/posts/two/</guid>
+      <description>one - Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sunt officiis repellat et reprehenderit distinctio cum numquam eveniet nemo consectetur nihil quo at dolor tempore deserunt earum, odit dignissimos, culpa dolorem, debitis consequuntur! Voluptate nulla quod, fugit vitae dolores culpa animi id, ad ratione est recusandae mollitia sapiente atque debitis at? Culpa consectetur, consequatur reiciendis? Et in quisquam, iste voluptas id enim, repudiandae recusandae placeat ea qui officiis pariatur impedit!</description>
+    </item>
+    
+  </channel>
+</rss>

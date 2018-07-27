@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Learning 101</title>
+    <link>http://localhost:1313/learning/categories/</link>
+    <description>Recent content in Categories on Learning 101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Jul 2018 19:38:03 +0600</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/learning/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bba</title>
+      <link>http://localhost:1313/learning/categories/bba/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/categories/bba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Civic</title>
+      <link>http://localhost:1313/learning/categories/civic/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/categories/civic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Current Affairs</title>
+      <link>http://localhost:1313/learning/categories/current-affairs/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/categories/current-affairs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>English</title>
+      <link>http://localhost:1313/learning/categories/english/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/categories/english/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fifth</title>
+      <link>http://localhost:1313/learning/categories/fifth/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/categories/fifth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geography</title>
+      <link>http://localhost:1313/learning/categories/geography/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/categories/geography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sociology</title>
+      <link>http://localhost:1313/learning/categories/sociology/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/categories/sociology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Third</title>
+      <link>http://localhost:1313/learning/categories/third/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/categories/third/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

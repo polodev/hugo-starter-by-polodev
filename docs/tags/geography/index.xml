@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geography on Learning 101</title>
+    <link>http://localhost:1313/learning/tags/geography/</link>
+    <description>Recent content in Geography on Learning 101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Jul 2018 19:38:03 +0600</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/learning/tags/geography/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fifth Post</title>
+      <link>http://localhost:1313/learning/posts/fifth-post/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/posts/fifth-post/</guid>
+      <description>first paragraph this is the first post written inside hugo ssg
+second paragraph this is the second post
+third paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quo nesciunt minima explicabo beatae? Voluptatum repudiandae dicta iste harum ipsam quibusdam a sed atque unde accusantium. Blanditiis numquam pariatur quia, quas distinctio culpa, doloribus adipisci autem quisquam corrupti in, perspiciatis illo! Sunt excepturi voluptates consequuntur. Veritatis ratione voluptatum, cupiditate repellat pariatur, in aut quo molestiae commodi beatae nulla nisi reiciendis similique tenetur corporis laboriosam enim voluptas sed labore obcaecati tempora ex.</description>
+    </item>
+    
+    <item>
+      <title>First Post</title>
+      <link>http://localhost:1313/learning/posts/first-post/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/posts/first-post/</guid>
+      <description>second paragraph this is the second post
+third paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quo nesciunt minima explicabo beatae? Voluptatum repudiandae dicta iste harum ipsam quibusdam a sed atque unde accusantium. Blanditiis numquam pariatur quia, quas distinctio culpa, doloribus adipisci autem quisquam corrupti in, perspiciatis illo! Sunt excepturi voluptates consequuntur. Veritatis ratione voluptatum, cupiditate repellat pariatur, in aut quo molestiae commodi beatae nulla nisi reiciendis similique tenetur corporis laboriosam enim voluptas sed labore obcaecati tempora ex.</description>
+    </item>
+    
+    <item>
+      <title>Fourth Post</title>
+      <link>http://localhost:1313/learning/posts/fourth-post/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/posts/fourth-post/</guid>
+      <description>first paragraph this is the first post written inside hugo ssg
+second paragraph this is the second post
+third paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quo nesciunt minima explicabo beatae? Voluptatum repudiandae dicta iste harum ipsam quibusdam a sed atque unde accusantium. Blanditiis numquam pariatur quia, quas distinctio culpa, doloribus adipisci autem quisquam corrupti in, perspiciatis illo! Sunt excepturi voluptates consequuntur. Veritatis ratione voluptatum, cupiditate repellat pariatur, in aut quo molestiae commodi beatae nulla nisi reiciendis similique tenetur corporis laboriosam enim voluptas sed labore obcaecati tempora ex.</description>
+    </item>
+    
+    <item>
+      <title>Second Post</title>
+      <link>http://localhost:1313/learning/posts/second-post/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/posts/second-post/</guid>
+      <description>first paragraph this is the first post written inside hugo ssg
+third paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quo nesciunt minima explicabo beatae? Voluptatum repudiandae dicta iste harum ipsam quibusdam a sed atque unde accusantium. Blanditiis numquam pariatur quia, quas distinctio culpa, doloribus adipisci autem quisquam corrupti in, perspiciatis illo! Sunt excepturi voluptates consequuntur. Veritatis ratione voluptatum, cupiditate repellat pariatur, in aut quo molestiae commodi beatae nulla nisi reiciendis similique tenetur corporis laboriosam enim voluptas sed labore obcaecati tempora ex.</description>
+    </item>
+    
+    <item>
+      <title>Sixth Post</title>
+      <link>http://localhost:1313/learning/posts/sixth-post/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/posts/sixth-post/</guid>
+      <description>first paragraph this is the first post written inside hugo ssg
+second paragraph this is the second post
+third paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quo nesciunt minima explicabo beatae? Voluptatum repudiandae dicta iste harum ipsam quibusdam a sed atque unde accusantium. Blanditiis numquam pariatur quia, quas distinctio culpa, doloribus adipisci autem quisquam corrupti in, perspiciatis illo! Sunt excepturi voluptates consequuntur. Veritatis ratione voluptatum, cupiditate repellat pariatur, in aut quo molestiae commodi beatae nulla nisi reiciendis similique tenetur corporis laboriosam enim voluptas sed labore obcaecati tempora ex.</description>
+    </item>
+    
+    <item>
+      <title>Third Post</title>
+      <link>http://localhost:1313/learning/posts/third-post/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/posts/third-post/</guid>
+      <description>first paragraph this is the first post written inside hugo ssg
+second paragraph this is the second post
+third paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quo nesciunt minima explicabo beatae? Voluptatum repudiandae dicta iste harum ipsam quibusdam a sed atque unde accusantium. Blanditiis numquam pariatur quia, quas distinctio culpa, doloribus adipisci autem quisquam corrupti in, perspiciatis illo! Sunt excepturi voluptates consequuntur. Veritatis ratione voluptatum, cupiditate repellat pariatur, in aut quo molestiae commodi beatae nulla nisi reiciendis similique tenetur corporis laboriosam enim voluptas sed labore obcaecati tempora ex.</description>
+    </item>
+    
+  </channel>
+</rss>

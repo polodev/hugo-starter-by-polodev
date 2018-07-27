@@ -1,0 +1,49 @@
+{{ define "main" }}
+<div id="single_page_content">
+  <h1 class="post_title">
+    <a href="{{.URL}}">{{.Title}}</a>
+  </h1>
+  <hr/>
+  {{ partial "post_meta" . }}
+  {{with .TableOfContents }}
+  <div class="toc">
+    <h2>
+      Table of Contents
+      <span id="toc_toggle_span">[hide]</span>
+    </h2>
+    <div id='toc_content'>
+      {{ . }}
+    </div>
+    <!-- /#top-content -->
+  </div>
+  {{end}}
+
+  <div class='article'>
+    {{.Content}}
+  </div>
+  <!-- /.article -->
+  {{if .Params.tags }}
+    <div class='tags py-3'>
+      Tags: {{ range .Params.tags }}
+        <a href="{{$.Site.BaseURL}}tags/{{ . | urlize }}">
+          {{ . }}
+        </a>
+      {{ end }}
+
+    </div>
+  {{end}}
+  <!-- /.tags -->
+
+  <div class="text-center py-3">
+    {{ if .PrevInSection }}
+      <a class="btn btn-info" href="{{.PrevInSection.Permalink}}">Next Post</a>
+    {{ end }}
+    {{ if .NextInSection }}
+      <a class="btn btn-info" href="{{.NextInSection.Permalink}}">Previous Post</a>
+    {{ end }}
+  </div>
+
+</div>
+
+{{ partial "comments" . }}
+{{ end }}
