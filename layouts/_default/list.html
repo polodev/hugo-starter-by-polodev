@@ -1,5 +1,6 @@
 {{ define "main" }}
 <div>
+<h2 class="mb-4">All posts under <span class='mark'>{{.Title}} </span> </h2>
 {{ range .Paginator.Pages }}
   <div class="card my-2">
     <div class="card-body">
@@ -7,8 +8,8 @@
       <h3 class="post_title">
         <a href="{{.URL}}">{{.Title}}</a>
       </h3>
-
       {{ partial "post_meta" . }}
+
 
 
       {{.Summary}}

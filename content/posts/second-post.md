@@ -5,6 +5,7 @@ draft= false
 categories= ["english"]
 tags= ["geography", "analogy"]
 number= 1
+authors= ["Polo Dev"]
 +++
 
 # first paragraph
@@ -13,7 +14,7 @@ this is the first post written inside hugo ssg
 # third paragraph
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quo nesciunt minima explicabo beatae? Voluptatum repudiandae dicta iste harum ipsam quibusdam a sed atque unde accusantium. Blanditiis numquam pariatur quia, quas distinctio culpa, doloribus adipisci autem quisquam corrupti in, perspiciatis illo! Sunt excepturi voluptates consequuntur. Veritatis ratione voluptatum, cupiditate repellat pariatur, in aut quo molestiae commodi beatae nulla nisi reiciendis similique tenetur corporis laboriosam enim voluptas sed labore obcaecati tempora ex. Iusto ut blanditiis est, optio, saepe culpa pariatur quaerat dolore quia quam, provident expedita quod error, obcaecati unde aut consequuntur. Sunt consequuntur eius animi quae, deserunt, quaerat illo sequi?
 
-# 4th paragraph 
+# 4th paragraph
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ullam eum voluptatibus possimus, aperiam sit blanditiis amet illo ratione quibusdam necessitatibus. Aliquam harum, at sint tenetur quas iste beatae fuga.
 
 # 5th paragraph

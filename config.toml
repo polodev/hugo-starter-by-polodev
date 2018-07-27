@@ -8,8 +8,17 @@ disqusShortname = "dev-learning"
 pygmentsUseClasses=true
 pygmentsOptions= "linenos=table, startinline=true"
 Paginate=2
-[taxonomy]
+[taxonomies]
   category="categories"
   tag="tags"
+  author="authors"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+[params.dhaka]
+[params.dhaka.polo]
+  name = "Polo Dev"
+  bio = "Polo Dev is a Educator. He completed his graduation in Marketing and later did a post graduation diploma in IT"
+  location = "Dhaka, Bangladesh"
+  email = "polodev10@gmail.com"
+  twitter=  "polodev10"
+  image = "/images/author/polodev.jpg"

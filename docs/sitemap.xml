@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/learning/posts/fifth-post/</loc>
-    <lastmod>2018-07-27T19:38:03+06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/learning/posts/first-post/</loc>
     <lastmod>2018-07-27T19:38:03+06:00</lastmod>
   </url>
@@ -18,12 +13,12 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/learning/posts/second-post/</loc>
+    <loc>http://localhost:1313/learning/posts/how-to-create-read-update-delete-in-php-mysql-with-pdo/</loc>
     <lastmod>2018-07-27T19:38:03+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/learning/posts/sixth-post/</loc>
+    <loc>http://localhost:1313/learning/posts/second-post/</loc>
     <lastmod>2018-07-27T19:38:03+06:00</lastmod>
   </url>
   
@@ -33,30 +28,23 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/learning/posts/how-to-create-read-update-delete-in-php-mysql-with-pdo/</loc>
-    <lastmod>2018-07-24T00:29:26+06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/learning/tags/analogy/</loc>
     <lastmod>2018-07-27T19:38:03+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/learning/tags/bba/</loc>
-    <lastmod>2018-07-27T19:38:03+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/learning/categories/bba/</loc>
-    <lastmod>2018-07-27T19:38:03+06:00</lastmod>
+    <loc>http://localhost:1313/learning/authors/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/learning/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/learning/categories/civic/</loc>
     <lastmod>2018-07-27T19:38:03+06:00</lastmod>
     <priority>0</priority>
   </url>
@@ -68,19 +56,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/learning/categories/civic/</loc>
-    <lastmod>2018-07-27T19:38:03+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/learning/categories/current-affairs/</loc>
-    <lastmod>2018-07-27T19:38:03+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/learning/tags/english/</loc>
     <lastmod>2018-07-27T19:38:03+06:00</lastmod>
     <priority>0</priority>
   </url>
@@ -92,19 +68,19 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/learning/categories/fifth/</loc>
-    <lastmod>2018-07-27T19:38:03+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/learning/tags/geography/</loc>
+    <loc>http://localhost:1313/learning/tags/english/</loc>
     <lastmod>2018-07-27T19:38:03+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/learning/categories/geography/</loc>
+    <lastmod>2018-07-27T19:38:03+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/learning/tags/geography/</loc>
     <lastmod>2018-07-27T19:38:03+06:00</lastmod>
     <priority>0</priority>
   </url>
@@ -122,7 +98,13 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/learning/tags/mba/</loc>
+    <loc>http://localhost:1313/learning/categories/php/</loc>
+    <lastmod>2018-07-27T19:38:03+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/learning/authors/polo-dev/</loc>
     <lastmod>2018-07-27T19:38:03+06:00</lastmod>
     <priority>0</priority>
   </url>

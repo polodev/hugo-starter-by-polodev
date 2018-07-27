@@ -22,17 +22,6 @@ third paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudi
     </item>
     
     <item>
-      <title>Sixth Post</title>
-      <link>http://localhost:1313/learning/posts/sixth-post/</link>
-      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
-      
-      <guid>http://localhost:1313/learning/posts/sixth-post/</guid>
-      <description>first paragraph this is the first post written inside hugo ssg
-second paragraph this is the second post
-third paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quo nesciunt minima explicabo beatae? Voluptatum repudiandae dicta iste harum ipsam quibusdam a sed atque unde accusantium. Blanditiis numquam pariatur quia, quas distinctio culpa, doloribus adipisci autem quisquam corrupti in, perspiciatis illo! Sunt excepturi voluptates consequuntur. Veritatis ratione voluptatum, cupiditate repellat pariatur, in aut quo molestiae commodi beatae nulla nisi reiciendis similique tenetur corporis laboriosam enim voluptas sed labore obcaecati tempora ex.</description>
-    </item>
-    
-    <item>
       <title>Third Post</title>
       <link>http://localhost:1313/learning/posts/third-post/</link>
       <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>

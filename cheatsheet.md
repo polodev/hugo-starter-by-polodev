@@ -8,7 +8,7 @@
   </ul>
 ~~~
 
-# showing categories for inside a post with `,` delimiter 
+# showing categories for inside a post with `,` delimiter
 
 ~~~go-html-template
 {{ range $i, $category := .Params.categories }}
@@ -18,12 +18,12 @@
   </a>
 {{ end }}
 
-// we should check before add categories 
+// we should check before add categories
 {{ if .Params.categories }}
 {{ end}}
 ~~~
 
-# showing tags for inside a post with `,` delimiter 
+# showing tags for inside a post with `,` delimiter
 ~~~html
 {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}
 ~~~
@@ -41,21 +41,21 @@
 </div>
 ~~~
 
-# making pagination 
-setting of paginate number in config.toml file 
+# making pagination
+setting of paginate number in config.toml file
 ~~~go-html-template
 Paginate=2
-~~~    
+~~~
 
-lopping `.Paginator.Pages` is list.html file .     
+lopping `.Paginator.Pages` is list.html file .
 
 ~~~go-html-template
 {{ range .Paginator.Pages }}
 {{ end }}
 {{ partial "pagination" . }}
-~~~    
+~~~
 
-making a partial pagination.html and paste content following          
+making a partial pagination.html and paste content following
 ~~~go-html-template
 <!-- Code starts here -->
 {{ $pag := $.Paginator }}
@@ -96,23 +96,23 @@ making a partial pagination.html and paste content following
 </nav>
 {{ end }}
 <!-- Code ends here -->
-~~~    
+~~~
 
-# publishDir 
-we can make docs folder a website in github. So instead of public folder we can publish build in to docs folder by adding following setting in config.toml file 
+# publishDir
+we can make docs folder a website in github. So instead of public folder we can publish build in to docs folder by adding following setting in config.toml file
 ~~~bash
 publishDir='docs'
 ~~~
 
-# how I added lunr search in my website 
+# how I added lunr search in my website
 
-1. set json output in config.toml file 
+1. set json output in config.toml file
 ~~~js
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 ~~~
 
-2. Added 'layout/index.json' file for json output structure. baseURL inside `config.toml` file matters.    
+2. Added 'layout/index.json' file for json output structure. baseURL inside `config.toml` file matters.
 
 ~~~js
 [{{ range $index, $page := .Site.Pages }}
@@ -130,14 +130,14 @@ home = [ "HTML", "RSS", "JSON"]
 ~~~
 
 3. Using `Hugo` command build the the site and generated json file. Which will be available root of the public directory `public/index.json`
-4. make a gulp file for making lunr index and store file 
-I have to install `lunr` , 'gulp' as dependency using npm  
+4. make a gulp file for making lunr index and store file
+I have to install `lunr` , 'gulp' as dependency using npm
 ~~~bash
 npm init -y
 npm i --save gulp lunr
 ~~~
 
-make `gulpfile.json`  in my root and wrote following code 
+make `gulpfile.json`  in my root and wrote following code
 
 ~~~js
 var gulp = require('gulp');
@@ -177,8 +177,8 @@ gulp.task('lunr', () => {
 });
 ~~~
 
-to generate 'static/js/lunr-index.json' file we need do following command `gulp lunr`     
-once we generate lunr index we can fetch json file using `fetch` api and listen to `keyup` event for search 
+to generate 'static/js/lunr-index.json' file we need do following command `gulp lunr`
+once we generate lunr index we can fetch json file using `fetch` api and listen to `keyup` event for search
 
 ~~~js
 $(document).ready(function () {
@@ -214,18 +214,18 @@ $(document).ready(function () {
             }
         });
     });
-}); 
+});
 
 ~~~
 
-# how to use disqus in hugo 
-Go to disqus website and add a site to disqus admin. It will generate website short name and some code.             
-first add disqus website short name in config.toml file         
+# how to use disqus in hugo
+Go to disqus website and add a site to disqus admin. It will generate website short name and some code.
+first add disqus website short name in config.toml file
 ~~~js
 disqusShortname = "dev-learning"
 ~~~
 
-make a partials for keeping generated code. in my case I kept file name `layouts/partials/comments.html`. Paste generate code there. 
+make a partials for keeping generated code. in my case I kept file name `layouts/partials/comments.html`. Paste generate code there.
 ~~~html
 <div id="disqus_thread"></div>
 <script>
@@ -249,21 +249,21 @@ s.setAttribute('data-timestamp', +new Date());
 
 ~~~
 
-Added to your `layouts/_default/single.html` or any other desired layout. 
+Added to your `layouts/_default/single.html` or any other desired layout.
 
 ~~~html
 {{ partial "comments" . }}
 ~~~
 
-# reading time in goHugo 
+# reading time in goHugo
 
 ~~~html
-{{ mul .ReadingTime }} minutes
+{{.ReadingTime }} minutes
 // for seconds output
 {{ mul .ReadingTime 60 }} seconds
 ~~~
 
-# adding date in hugo 
+# adding date in hugo
 
 ~~~html
 {{ .PublishDate.Format "January 2, 2006" }}.

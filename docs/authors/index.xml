@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on Learning 101</title>
+    <link>http://localhost:1313/learning/authors/</link>
+    <description>Recent content in Authors on Learning 101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/learning/authors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Polo Dev</title>
+      <link>http://localhost:1313/learning/authors/polo-dev/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/authors/polo-dev/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

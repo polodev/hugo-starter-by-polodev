@@ -1,3 +1,4 @@
+// code moved to script.js file 
 var index, store;
 $(document).ready(function () {
     'use strict';

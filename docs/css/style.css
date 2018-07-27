@@ -40,22 +40,21 @@ a {
       color: #fff;
       display: block; }
 
-span.mark {
-  color: brown; }
+table.lntable {
+  position: relative; }
 
-.toc {
-  margin: 2em 0;
-  padding: 1em 0;
-  border: 1px solid #eee;
-  border-radius: 4px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03); }
-  .toc h2 {
-    margin-left: 1em;
-    border-bottom: 1px solid beige; }
-    .toc h2 span {
-      font-size: 14px;
-      display: inline-block;
-      cursor: pointer; }
+.copy-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: inline-block;
+  color: maroon;
+  border: 1px solid maroon;
+  cursor: pointer; }
+
+.copy-button:hover {
+  background-color: maroon;
+  color: white; }
 
 .meta {
   color: #777; }
@@ -76,5 +75,22 @@ span.mark {
   padding: 5px 10px;
   margin-right: 8px;
   margin-bottom: 8px; }
+
+span.mark {
+  color: brown; }
+
+.toc {
+  margin: 2em 0;
+  padding: 1em 0;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03); }
+  .toc h2 {
+    margin-left: 1em;
+    border-bottom: 1px solid beige; }
+    .toc h2 span {
+      font-size: 14px;
+      display: inline-block;
+      cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,9 @@
     <a href="{{.URL}}">{{.Title}}</a>
   </h1>
   <hr/>
+
   {{ partial "post_meta" . }}
+
   {{with .TableOfContents }}
   <div class="toc">
     <h2>
@@ -36,10 +38,10 @@
 
   <div class="text-center py-3">
     {{ if .PrevInSection }}
-      <a class="btn btn-info" href="{{.PrevInSection.Permalink}}">Next Post</a>
+      <a class="btn btn-info" href="{{.PrevInSection.Permalink}}">Previous Post</a>
     {{ end }}
     {{ if .NextInSection }}
-      <a class="btn btn-info" href="{{.NextInSection.Permalink}}">Previous Post</a>
+      <a class="btn btn-info" href="{{.NextInSection.Permalink}}">Next Post</a>
     {{ end }}
   </div>
 

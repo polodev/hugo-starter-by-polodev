@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php on Learning 101</title>
+    <link>http://localhost:1313/learning/categories/php/</link>
+    <description>Recent content in Php on Learning 101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Jul 2018 19:38:03 +0600</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/learning/categories/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Create Read Update Delete in Php Mysql With Pdo</title>
+      <link>http://localhost:1313/learning/posts/how-to-create-read-update-delete-in-php-mysql-with-pdo/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/posts/how-to-create-read-update-delete-in-php-mysql-with-pdo/</guid>
+      <description>Visual CRUD in PHP 
+In this video tutorial I have shown how to make a basic crud application in php. I have connected with database using php PDO(php data object). Which is database agnostic. You can connect any sql database with this procedure.
+Objective of this video  You will be able to create, read, update, delete in php You will understand php data object(PDO). PDO is database agnostic.</description>
+    </item>
+    
+  </channel>
+</rss>

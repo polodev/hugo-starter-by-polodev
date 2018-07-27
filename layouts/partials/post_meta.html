@@ -1,3 +1,14 @@
+{{if .Params.authors}}
+<div class='author meta ml-1'>
+  {{range .Params.authors}}
+    <i class='fa fa-user'></i>
+    <a href='{{$.Site.BaseURL}}/authors/{{ . | urlize | lower }}'>
+      {{.}}
+    </a>
+  {{end}}
+</div>
+{{end }}
+
 <div class="meta">
   <span class="date">
     <i class='fa fa-calendar'></i>

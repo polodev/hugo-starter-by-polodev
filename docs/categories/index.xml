@@ -6,19 +6,9 @@
     <description>Recent content in Categories on Learning 101</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Jul 2018 19:38:03 +0600</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/learning/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Bba</title>
-      <link>http://localhost:1313/learning/categories/bba/</link>
-      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
-      
-      <guid>http://localhost:1313/learning/categories/bba/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Civic</title>
@@ -48,20 +38,20 @@
     </item>
     
     <item>
-      <title>Fifth</title>
-      <link>http://localhost:1313/learning/categories/fifth/</link>
-      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
-      
-      <guid>http://localhost:1313/learning/categories/fifth/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Geography</title>
       <link>http://localhost:1313/learning/categories/geography/</link>
       <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
       
       <guid>http://localhost:1313/learning/categories/geography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Php</title>
+      <link>http://localhost:1313/learning/categories/php/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/categories/php/</guid>
       <description></description>
     </item>
     

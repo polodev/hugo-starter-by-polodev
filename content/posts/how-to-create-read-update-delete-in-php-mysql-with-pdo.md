@@ -1,20 +1,24 @@
----
-title: "How to Create Read Update Delete in Php Mysql With Pdo"
-date: 2018-07-24T00:29:26+06:00
-draft: false
----
++++
+title= "How to Create Read Update Delete in Php Mysql With Pdo"
+date= 2018-07-27T19:38:03+06:00
+draft= false
+categories= ["php"]
+tags= ["geography", "analogy"]
+number= 1
+authors= ["Polo Dev"]
++++
 
 
 # Visual CRUD in PHP
 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=MYhw4-Bc-oM
-" target="_blank"><img src="https://raw.githubusercontent.com/polodev/youtube-php-crud/master/thumbnail.png" 
+" target="_blank"><img src="https://raw.githubusercontent.com/polodev/youtube-php-crud/master/thumbnail.png"
 alt="create read update delete - CRUD in php and mysql using Php Data Object - pdo" width="540" border="10" /></a>
 
 
 
-In this video tutorial I have shown how to make a basic crud application in php. I have connected with database using php PDO(php data object). Which is database agnostic. You can connect any sql database with this procedure.      
+In this video tutorial I have shown how to make a basic crud application in php. I have connected with database using php PDO(php data object). Which is database agnostic. You can connect any sql database with this procedure.
 
 ### Objective of this video
 * You will be able to create, read, update, delete in php
@@ -40,10 +44,10 @@ CREATE TABLE people (
 {{</ highlight >}}
 
 ### Database connection
-In `db.php` connect with database by instantiating `PDO`. 
+In `db.php` connect with database by instantiating `PDO`.
 
 {{< highlight php >}}
-<?php 
+<?php
 $dsn = 'mysql:host=localhost;dbname=company';
 $username = 'root';
 $password = '';
@@ -57,7 +61,7 @@ here dsn means data source name. which contain sql driver, database name and hos
 we made connection in `db.php` file. Whenever we need connection we have to require 'db.php' page. In create page, our form action is empty so, it will submit form data to same page. Hence, we use php `isset` function whether form submitted or not. If `$_POST['name_field']` is set in  we will get value from form and insert data into database
 
 {{< highlight php >}}
-<?php 
+<?php
   $name = $_POST['name'];
   $email = $_POST['email'];
   $sql = 'INSERT INTO people(name, email) VALUES(:name, :email)';
@@ -70,21 +74,21 @@ Here we use placeholder in sql statement. We can use `$connection->query()` func
 ### read
 
 {{< highlight php >}}
-<?php 
+<?php
 $sql = 'SELECT * FROM people';
 $statement = $connection->prepare($sql);
 $statement->execute();
 $people = $statement->fetchAll(PDO::FETCH_OBJ);
 {{</ highlight >}}
 
-Here we are fetching data from database using fetchAll function which take `PDO::FETCH_OBJ` constant. If we don't pass any constant `fetchAll` function return index and associative array. Therefore, I like to access table column in object oriented way. Hence I passed that constant. 
+Here we are fetching data from database using fetchAll function which take `PDO::FETCH_OBJ` constant. If we don't pass any constant `fetchAll` function return index and associative array. Therefore, I like to access table column in object oriented way. Hence I passed that constant.
 
-### update 
-In home page (`index.php`) we linked edit page in action column. which actually send data to edit page using get method. We give url param `id` and it value's is table id.    
+### update
+In home page (`index.php`) we linked edit page in action column. which actually send data to edit page using get method. We give url param `id` and it value's is table id.
 In  `edit.php` file we can access id param using `$_GET` super global. Once we have id we can fetch person information from database using following code.
 
 {{< highlight php >}}
-<?php 
+<?php
 $id = $_GET['id'];
 $sql = 'SELECT * FROM people WHERE id=:id';
 $statement = $connection->prepare($sql);
@@ -95,7 +99,7 @@ $person = $statement->fetch(PDO::FETCH_OBJ);
 In case of edit, existing input field value will be `$person` name and email. when edit form will submit we update our database record by filtering id.
 
 {{< highlight php >}}
-<?php 
+<?php
 $name = $_POST['name'];
 $email = $_POST['email'];
 $sql = 'UPDATE people SET name=:name, email=:email WHERE id=:id';
@@ -107,18 +111,18 @@ $statement->execute([':name' => $name, ':email' => $email, ':id' => $id]);
 deleting logic also as like edit. we will accessing id using `$_GET` super global and we will delete database record by filtering id.
 
 {{< highlight php >}}
-<?php 
+<?php
 $id = $_GET['id'];
 $sql = 'DELETE FROM people WHERE id=:id';
 $statement = $connection->prepare($sql);
 $statement->execute([':id' => $id])
 {{</ highlight >}}
 
-### redirection 
+### redirection
 For edit and delete success we redirect to home page using `header` function.
 
 {{< highlight php >}}
-<?php 
+<?php
 header('Location: /');
 {{</ highlight >}}
 

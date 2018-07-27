@@ -12,17 +12,6 @@
     
     
     <item>
-      <title>Fifth Post</title>
-      <link>http://localhost:1313/learning/posts/fifth-post/</link>
-      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
-      
-      <guid>http://localhost:1313/learning/posts/fifth-post/</guid>
-      <description>first paragraph this is the first post written inside hugo ssg
-second paragraph this is the second post
-third paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quo nesciunt minima explicabo beatae? Voluptatum repudiandae dicta iste harum ipsam quibusdam a sed atque unde accusantium. Blanditiis numquam pariatur quia, quas distinctio culpa, doloribus adipisci autem quisquam corrupti in, perspiciatis illo! Sunt excepturi voluptates consequuntur. Veritatis ratione voluptatum, cupiditate repellat pariatur, in aut quo molestiae commodi beatae nulla nisi reiciendis similique tenetur corporis laboriosam enim voluptas sed labore obcaecati tempora ex.</description>
-    </item>
-    
-    <item>
       <title>First Post</title>
       <link>http://localhost:1313/learning/posts/first-post/</link>
       <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
@@ -44,23 +33,23 @@ third paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudi
     </item>
     
     <item>
+      <title>How to Create Read Update Delete in Php Mysql With Pdo</title>
+      <link>http://localhost:1313/learning/posts/how-to-create-read-update-delete-in-php-mysql-with-pdo/</link>
+      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
+      
+      <guid>http://localhost:1313/learning/posts/how-to-create-read-update-delete-in-php-mysql-with-pdo/</guid>
+      <description>Visual CRUD in PHP 
+In this video tutorial I have shown how to make a basic crud application in php. I have connected with database using php PDO(php data object). Which is database agnostic. You can connect any sql database with this procedure.
+Objective of this video  You will be able to create, read, update, delete in php You will understand php data object(PDO). PDO is database agnostic.</description>
+    </item>
+    
+    <item>
       <title>Second Post</title>
       <link>http://localhost:1313/learning/posts/second-post/</link>
       <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
       
       <guid>http://localhost:1313/learning/posts/second-post/</guid>
       <description>first paragraph this is the first post written inside hugo ssg
-third paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quo nesciunt minima explicabo beatae? Voluptatum repudiandae dicta iste harum ipsam quibusdam a sed atque unde accusantium. Blanditiis numquam pariatur quia, quas distinctio culpa, doloribus adipisci autem quisquam corrupti in, perspiciatis illo! Sunt excepturi voluptates consequuntur. Veritatis ratione voluptatum, cupiditate repellat pariatur, in aut quo molestiae commodi beatae nulla nisi reiciendis similique tenetur corporis laboriosam enim voluptas sed labore obcaecati tempora ex.</description>
-    </item>
-    
-    <item>
-      <title>Sixth Post</title>
-      <link>http://localhost:1313/learning/posts/sixth-post/</link>
-      <pubDate>Fri, 27 Jul 2018 19:38:03 +0600</pubDate>
-      
-      <guid>http://localhost:1313/learning/posts/sixth-post/</guid>
-      <description>first paragraph this is the first post written inside hugo ssg
-second paragraph this is the second post
 third paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quo nesciunt minima explicabo beatae? Voluptatum repudiandae dicta iste harum ipsam quibusdam a sed atque unde accusantium. Blanditiis numquam pariatur quia, quas distinctio culpa, doloribus adipisci autem quisquam corrupti in, perspiciatis illo! Sunt excepturi voluptates consequuntur. Veritatis ratione voluptatum, cupiditate repellat pariatur, in aut quo molestiae commodi beatae nulla nisi reiciendis similique tenetur corporis laboriosam enim voluptas sed labore obcaecati tempora ex.</description>
     </item>
     
@@ -73,17 +62,6 @@ third paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudi
       <description>first paragraph this is the first post written inside hugo ssg
 second paragraph this is the second post
 third paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quo nesciunt minima explicabo beatae? Voluptatum repudiandae dicta iste harum ipsam quibusdam a sed atque unde accusantium. Blanditiis numquam pariatur quia, quas distinctio culpa, doloribus adipisci autem quisquam corrupti in, perspiciatis illo! Sunt excepturi voluptates consequuntur. Veritatis ratione voluptatum, cupiditate repellat pariatur, in aut quo molestiae commodi beatae nulla nisi reiciendis similique tenetur corporis laboriosam enim voluptas sed labore obcaecati tempora ex.</description>
-    </item>
-    
-    <item>
-      <title>How to Create Read Update Delete in Php Mysql With Pdo</title>
-      <link>http://localhost:1313/learning/posts/how-to-create-read-update-delete-in-php-mysql-with-pdo/</link>
-      <pubDate>Tue, 24 Jul 2018 00:29:26 +0600</pubDate>
-      
-      <guid>http://localhost:1313/learning/posts/how-to-create-read-update-delete-in-php-mysql-with-pdo/</guid>
-      <description>Visual CRUD in PHP 
-In this video tutorial I have shown how to make a basic crud application in php. I have connected with database using php PDO(php data object). Which is database agnostic. You can connect any sql database with this procedure.
-Objective of this video  You will be able to create, read, update, delete in php You will understand php data object(PDO). PDO is database agnostic.</description>
     </item>
     
   </channel>
